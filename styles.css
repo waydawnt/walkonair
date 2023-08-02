@@ -33,6 +33,6 @@
   .video-content {
     width: auto;
     height: 100%;
-    background-position: center center;
+    transform: translateX(31%);
   }
 }
