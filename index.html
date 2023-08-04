@@ -47,7 +47,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link fs-5 text-black" href="/">Home</a>
+                <a class="nav-link fs-5 text-black" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a
@@ -79,7 +79,12 @@
             <p class="lead mb-4 p-text">Until then</p>
             <p class="lead mb-4 p-text">Checkout Our</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 me-sm-3"
+                data-bs-toggle="modal"
+                data-bs-target="#portfolioPDF"
+              >
                 PORTFOLIO
               </button>
               <button
@@ -93,6 +98,34 @@
             </div>
           </div>
           <div class="overflow-hidden" style="max-height: 30vh"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO PDF -->
+    <div class="modal" id="portfolioPDF">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Portfolio</h1>
+          </div>
+          <div class="modal-body">
+            <embed
+              src="resources/portfolio.pdf"
+              type="application/pdf"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
