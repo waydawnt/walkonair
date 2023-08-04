@@ -50,33 +50,23 @@
                 <a class="nav-link fs-5 text-black" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 text-black" href="#">Brochure</a>
+                <a
+                  class="nav-link fs-5 text-black"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#brochurePDF"
+                  >Brochure</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 text-black" href="#">Contact Us</a>
+                <a class="nav-link fs-5 text-black" href="contact.html"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <!-- Navbar -->
-      <!-- <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-5 py-3">
-          <a class="navbar-brand" href="#">Walk on Air</a>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-black" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-black" href="#">Brochure</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 text-black" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
 
       <!-- Coming soon section -->
       <div class="center-part">
@@ -95,12 +85,42 @@
               <button
                 type="button"
                 class="btn btn-outline-secondary btn-lg px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#brochurePDF"
               >
                 BROCHURE
               </button>
             </div>
           </div>
           <div class="overflow-hidden" style="max-height: 30vh"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BROCHURE PDF -->
+    <div class="modal" id="brochurePDF">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Brochure</h1>
+          </div>
+          <div class="modal-body">
+            <embed
+              src="resources/brochure.pdf"
+              type="application/pdf"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>

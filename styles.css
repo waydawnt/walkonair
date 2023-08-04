@@ -41,6 +41,18 @@ a {
 
 /* ------------------CLASS ELEMENTS ------------------ */
 
+.row h1 {
+  color: white;
+}
+
+.row hr {
+  color: white;
+}
+
+.row p {
+  color: white;
+}
+
 .p-text {
   font-size: 1.5rem;
   color: rgb(7, 27, 56) !important;
